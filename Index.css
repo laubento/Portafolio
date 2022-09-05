@@ -16,6 +16,9 @@ li, h2, h3, h1, p, h4{
     font-family: 'Kanit', sans-serif;
     text-decoration: none;
 }
+h2,h1,h3,h4,img{
+    user-select: none;
+}
 h4{
     color: #fff;
 }
@@ -111,12 +114,12 @@ nav{
 }
 
 .about-container{
-    background-color: #fff;
+    /* background-color: #fff; */
     height: 100vh;
     display: flex;
 }
 .amarillo{
-    background-color: rgb(252, 252, 252);
+    background-color: rgba(240, 240, 240, 0.89);
     width: 50%;
     padding: 30px;
 }
@@ -126,7 +129,7 @@ nav{
 .amarillo h2{
     font-size: 40px;
     color: rgb(0, 0, 0);
-    background-color: yellow;
+    background: rgb(250, 217, 0);
     border-radius: 20px;
     width: 70%;
     display: flex;
@@ -134,14 +137,16 @@ nav{
     justify-content: center;
     margin: 0px 0px 55px 20px;
 }
+.experiencia{
+    margin: 20px 0px!important;
+}
 .amarillo p{
-    width: 670px;
+    /* width: 80vh; */
     line-height: 50px;
 }
 .blanco{
     width: 50%;
-    background: yellow;
-    
+    background: rgba(250, 217, 0, 0.904);
 }
 .blanco h2{
     padding-top: 30px;
@@ -157,19 +162,16 @@ nav{
     height: 30px;
     width: 200px;
     transition: all 0.3s;
+    padding: 24px;
+    border-radius: 20px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 15px;
 }
 .botonCV{
     padding: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.descargar{
-    padding: 24px;
-    border-radius: 20px;
-    font-family: 'Kanit', sans-serif;
-    font-size: 15px;
 }
 
 .botonCV a{
@@ -186,8 +188,6 @@ nav{
     color:white;
 }
 
-
-
 .curriculum-container{
     display: flex;
     justify-content: center;
@@ -196,22 +196,25 @@ nav{
 }
 
 .curriculum-img{
-    height: 440px;
+    height: 50%;
+    width: 50%;
 }
 .skill{
     margin: 20px;
 }
 .skills{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     text-align:center;
+    flex-wrap: wrap;
 }
 .skill{
     transition:  0.4s;
 }
 
 .skill img{
+
     transition: all 0.4s;
 }
 .skill img:hover{
