@@ -48,7 +48,7 @@ h4{
 }
 
 .container-principal{
-    background-image: url(/Imagenes/FondoPrincipal.png);
+    background-image: url(./Imagenes/FondoPrincipal.png);
     background-repeat: no-repeat;
     background-attachment: center center;
     background-size: cover;
