@@ -1,13 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <!-- <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <link rel="stylesheet" href="index.css"/>
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" />
+
+    <!--Icono page-->
+    <link rel="icon" href="Imagenes/icon.png">
+
+    <!-- Abajo link google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+
+
+
+    <title>Lautaro Iribarren</title>
 </head>
+
 <body>
-    
+
+    <div class="container-principal">
+        <header>
+            <nav class="nav">
+                <div class="contenedor-logo">
+                    <div class="container-img-logo">
+                        <img class="logo-gracias" src="./Imagenes/Gracias.png" alt="Gracias!" class="logo">
+                    </div>
+                    <h1>Gracias por ver mi portafolio &#10084</h1>
+                </div>
+                <ul class="lista-container">
+                    <li><a href="#home">Home</a></li>
+                    <li><a class="about" href="#about">About</a></li>
+                    <li><a href="#skills">skills</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div></div>
+        <div class="home-container" id="home">
+            <img src="./Imagenes/FotoPerfil1.jpeg" alt="Mi foto" class="foto-perfil">
+            <div class="descripcion-container">
+                <h2 class="saludo">Hola!</h2>
+                <h1 class="nombre">Yo soy Lautaro Iribarren</h1>
+                <h2 class="titulo">Full Stack Developer</h2>
+            </div>
+        </div>
+
+        <div class="about-container" id="about">
+            <div class="amarillo">
+                <h1>About Me</h1>
+                <h2>Quien soy?</h2>
+                <p>
+                    Soy un desarrollador Full Stack orientado tanto al back-end como al front-end, me especialice
+                    tambien en el desarrollo de videojuego con manejo habil en c# y unity. Tengo experiencia en la
+                    creacion de aplicaciones web y en el manejo de JavaScript avanzado.
+                </p>
+                <br />
+                <br />
+                <p>
+                    Me caracteriza mucho la forma de de organizar trabajos grupales con un exelente desempeño del
+                    equipo
+                    en general, creo fielmente que aprender del resto da un plus a ese conocimiento!
+                </p>
+            </div>
+            <div class="blanco">
+                <h2>Te dejo mi CV para que sepas mas de mi!</h2>
+                <div class="curriculum-container">
+                    <img src="./Imagenes/CurriculumIMG.png" alt="curriculum" class="curriculum-img">
+                </div>
+                <div class="botonCV">
+                    <a title="descargar CV" download="Lautaro Iribarren CV" href="Cv/Lautaro Iribarren - Full Stack.pdf"
+                        target="_blank"><button class="descargar"><img src="Imagenes/Cvlogo.png">Descargar
+                            CV</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-container" id="skills">
+            <div class="principal-skill">
+                <div class="titulo-skill-container">
+                    <h1 class="titulo-skill">Skills</h1>
+                </div>
+                <div class="skills">
+                    <div class="skill">
+                        <h4>JavaScript</h4>
+                        <img src="./Imagenes/LogosSkill/JavaScript.png" alt="JavaScript">
+                    </div>
+                    <div class="skill">
+                        <h4>Html</h4>
+                        <img src="./Imagenes/LogosSkill/html-5.png" alt="Html">
+                    </div>
+                    <div class="skill">
+                        <h4>Css</h4>
+                        <img src="./Imagenes/LogosSkill/css-3.png" alt="Css">
+                    </div>
+                    <div class="skill">
+                        <h4>Node.Js</h4>
+                        <img src="./Imagenes/LogosSkill/nodo-js.png" alt="NodeJs">
+                    </div>
+                    <div class="skill">
+                        <h4>React</h4>
+                        <img src="./Imagenes/LogosSkill/physics.png" alt="React">
+                    </div>
+                    <div class="skill">
+                        <h4>Redux</h4>
+                        <img src="./Imagenes/LogosSkill/atomic.png" alt="Redux">
+                    </div>
+                    <div class="skill">
+                        <h4>SQL</h4>
+                        <img src="./Imagenes/LogosSkill/database.png" alt="SQL">
+                    </div>
+                    <div class="skill">
+                        <h4>TypeScript</h4>
+                        <img src="./Imagenes/LogosSkill/typescript.png" alt="TypeScript">
+                    </div>
+                    <div class="skill">
+                        <h4>C#</h4>
+                        <img src="./Imagenes/LogosSkill/c-sharp.png" alt="C#">
+                    </div>
+                    <div class="skill">
+                        <h4>Unity</h4>
+                        <img src="./Imagenes/LogosSkill/unity.png" alt="Unity">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="proyectos-container" id="proyectos">
+            <div class="proyecto-clima"></div>
+            <div class="proyecto-peliculas"></div>
+            <div class="proyecto-unity"></div>
+        </div>
+
+        <div class="formulario-contacto" id="contacto"></div>
+            <div class="link-container">
+                <ul>
+                    <li class="link-contacto"></li>
+                </ul>
+            </div>
+        <script src="index.js"></script>
 </body>
+
 </html>
