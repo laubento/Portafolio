@@ -12,15 +12,19 @@ div[id]{
     scroll-margin-top: 60px;
 }
 
-li, h2, h3, h1, p, h4{
+li, h2, h3, h1, p, h4, a{
     font-family: 'Kanit', sans-serif;
     text-decoration: none;
 }
-h2,h1,h3,h4,img{
+li, h2,h1,h3,h4,img{
     user-select: none;
 }
 h4{
     color: #fff;
+}
+.hr-inicio {border: 0; 
+    height: 12px; 
+    box-shadow: inset 0px 12px 12px -12px orange;
 }
 .contenedor-logo{
     display: flex;
@@ -33,8 +37,6 @@ h4{
     font-size: 1px;
     text-align: unset;
 }
-
-
 .contenedor-logo:hover{
     width: 50%;
     font-size: 20px;
@@ -62,6 +64,7 @@ nav{
     background-color: rgba(0, 0, 0, 0.61);
     position:fixed;
     width: 100%;
+    z-index:999;
 }
 
 
@@ -221,7 +224,7 @@ nav{
     padding: 0px 15px;
 }
 .skill-container{
-    background-color: rgba(0, 0, 0, 0.61);
+    background: rgba(0, 0, 0, 0.61);
     align-items: center;
     padding: 30px;
     height: 50vh;
@@ -235,20 +238,211 @@ nav{
     font-size: 50px;
     color: rgb(255, 255, 255);
     text-shadow: 10px 10px 2px rgba(255, 255, 0, 0.164);
+    margin-bottom: 70px;
 }
 
 
 .proyectos-container{
     width:100%;
     height: 100vh;
-    background: red;
+    background: rgba(0, 0, 0, 0.61);
+    
+}
+
+.contenedor-principal-proyectos{
+    padding: 130px 0px 0px 0px;
+    height: 100%;
+    width: 100%;
+}
+.contenedor-primeros-proyectos{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.titulo-proyecto{
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+    font-family: 'Teko', sans-serif;
+    color:yellow;
+    margin: 20px;
+}
+
+/*  */
+.container{
+    height: 200px;
+    width: 400px;
+    
+}
+
+.portfolio__item {
+    background: white;
+    position: relative;
+    object-fit: cover;
+    overflow: hidden;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+.portfolio__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: all 1s;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+  
+.portfolio__description {
+    padding: 50px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 300px;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    border-radius: 10px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+  
+.portfolio__item:hover .portfolio__description {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.5s;
+    border-radius: 10px;
+    transform: translateY(-300px);
+}
+  
+.portfolio__item:hover .portfolio__img {
+    transition: all 1s;
+    border-radius: 10px;
+    transform: scale(1.3);
+}
+  
+.portfolio__description--title {
+    color: #fff;
+}
+  
+.portfolio__description--text {
+    margin: 20px 0;
+    color: #fff;
+}
+  
+.buttons__container {
+    display: flex;
+    border-radius: 10px;
+}
+  
+.button {
+    background: #191919;
+    color: #f5f5f5;
+    padding: 5px 10px;
+    display: inline-block;
+    margin: auto;
+}
+
+.button:hover {
+    color: rgb(255, 251, 11);
+}
+
+.button--cta {
+
+    background: var(--blue);
+    color: var(--white);
+    padding: 5px 30px;
+    display: inline-block;
+    align-self: center;
+    margin: 20px auto;
+    font: bold;
+    border-radius: 5px;
+}
+
+.button--cta i {
+    margin-right: 10px;
+}
+
+.button--cta:hover {
+    background: var(--grey);
+    color: white;
+}
+.button .fa-github:before {
+    color: white;
+}
+/*  */
+
+
+.hr-final{
+    border: 0; height: 0; box-shadow: 0 1px 5px 1px rgb(255, 251, 11);
 }
 
 .formulario-contacto{
     width:100%;
-    height: 100vh;
-    background: blue;
+    background: rgba(0, 0, 0, 0.61);
 }
+
+.formulario-contacto h1{
+    display:flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    text-shadow: 10px 10px 2px rgba(255, 255, 0, 0.164);
+    padding-top: 60px;
+}
+.formulario-contacto p{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+.container-contacto{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 60px 0px;
+}
+.container-contacto h4{
+    display: flex;
+    justify-content: center;
+}
+.container-contacto div{
+    background-color: #fbff0000;
+    transition: all 0.4s;
+    border-radius: 20%;
+}
+.container-contacto div:hover{
+    padding: 10px;
+    background-color: #ffffffda;
+}
+
+.container-contacto div:hover > h4{
+    color: black;
+}
+
+/*  */
+
+.footer {
+    background-color: rgba(245,245,245,0.6);
+    padding: 30px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer a{
+    color: black;
+}
+
+
+.footer a:hover {
+    color: blue;
+}
+
+/*  */
+
+
 
 /* Notas para media querry */
 /* 
@@ -270,3 +464,27 @@ PARTE PROYECTOS
 PARTE CONTACTO
 
 */
+
+@media (max-width: 1360px) {
+    .container-experiencia{
+        display: none;
+    }
+    .contenedor-principal-proyectos{
+        padding: 0px
+    }
+    .amarillo h2{
+        margin: 10px;
+    }
+    .blanco{
+        padding-top: 30px;
+    }
+    .curriculum-container img{
+        height: 37%;
+        width: 37%;
+    }
+    .skill-container h1{
+        margin: 0px;
+    }
+
+}
+
