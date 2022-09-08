@@ -66,9 +66,6 @@ nav{
     width: 100%;
     z-index:999;
 }
-
-
-
 .logo-gracias{
     margin-left: 1px;
     height: 50px;
@@ -246,7 +243,6 @@ nav{
     width:100%;
     height: 100vh;
     background: rgba(0, 0, 0, 0.61);
-    
 }
 
 .contenedor-principal-proyectos{
@@ -449,7 +445,141 @@ nav{
 /* Pantalla por defecto 1920 x 1080 */
 
 
-/* 1360 x 768 TERMINADO*/
+@media (min-width: 3000px){
+    .lista-container{
+        margin-right: 20px;
+   } 
+   .lista-container li{
+        margin: 0px 40px;
+    } 
+    .lista-container li a{
+        font-size: 40px;
+    } 
+    .logo-gracias{
+        height: 75px;
+        margin-left: 30px;
+    }
+    .container-img-logo{
+        margin-right: 80px;
+    }
+    .contenedor-logo{
+        width: 130px;
+        height: 80px;
+    }
+    .foto-perfil{
+        height: 600px;
+        width: 600px;
+    }
+    .descripcion-container h2{
+        font-size: 60px;
+    }
+    .descripcion-container h1{
+        font-size: 100px;
+    }
+    .amarillo{
+        padding: 60px;
+    }
+    .amarillo h1 {
+        margin-bottom: 120px;
+        font-size: 120px;
+    }
+    .amarillo h2{
+        font-size: 80px;
+    }
+    .amarillo p{
+        /* width: 80vh; */
+        line-height: 90px;
+        font-size: 40px;
+    }
+    .experiencia{
+        margin: 90px 0px!important;
+    }
+    .blanco h2{
+        font-size: 80px;
+        padding: 100px 0px;
+    }
+    .botonCV{
+        padding: 64px;
+
+    }
+    .descargar{
+        height: 90px;
+        width: 550px;
+        font-size: 40px;
+    }
+    .skill-container h1{
+        font-size: 150px;
+    }
+    .skill{
+        margin: 40px;
+    }
+    .skill img{
+        width: 150px;
+        height: 150px;
+    }
+    .skill h4{
+        font-size: 40px;
+    }
+    .skill img:hover{
+        padding: 10px 10px;
+    }
+    /*  */
+    .container{
+        width: 900px;
+        height: 500px;
+    }
+    .portfolio__description--title {
+        font-size: 60px;
+    }
+    .portfolio__description--text {
+        margin: 20px 0;
+        font-size: 35px;
+    }
+    .button {
+        padding: 10px 20px;
+        margin-top: 60px;
+        font-size: 35px;
+    }
+    /*  */
+    .titulo-proyecto{
+        font-size: 200px;
+        margin: 100px;
+    }
+    .contenedor-principal-proyectos{
+        padding-top: 330px;
+        height: 100%;
+        width: 100%;
+    }
+    .formulario-contacto h1{
+        font-size: 150px;
+    }
+    .formulario-contacto p{
+        font-size: 50px;
+    }
+    .container-contacto h4{
+        font-size: 60px;
+    }
+    .container-contacto img{
+        /* height: 70%; */
+        width: 200px;
+
+    }
+    .container-contacto a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-contacto div:hover{
+        padding: 20px;
+        background-color: #ffffffda;
+    }
+    .footer {
+        background-color: rgba(245, 245, 245, 0.911);
+        padding: 30px;
+        text-align: center;
+        font-size: 34px;
+    }
+}
 @media (max-width: 1360px) {
     .container-experiencia{
         display: none;
@@ -499,6 +629,123 @@ nav{
     }
     .hr-inicio{
         margin-top: 60px;
+    }
+}
+@media (max-width: 768px){
+
+   .lista-container{
+        margin-right: 0px;
+   } 
+   .lista-container li{
+        margin: 0px 10px;
+    } 
+   .lista-container li a{
+        font-size: 12px;
+    } 
+    .logo-gracias{
+        height: 35px;
+    }
+    .contenedor-logo:hover{
+        font-size: 10px;
+    }
+    .foto-perfil{
+        height: 200px;
+        width: 200px;
+    }
+    .descripcion-container h2{
+        font-size: 15px;
+    }
+    .descripcion-container h1{
+        font-size: 30px;
+    }
+    .amarillo h1{
+        margin-bottom: 20px;
+    }
+    .amarillo h2{
+        font-size: 20px;
+    }
+    .amarillo p{
+        line-height: 23px;
+        font-size: 12px;
+    }
+    .blanco h2{
+        padding-top: 10px;
+        font-size: 15px;
+    }
+    .descargar{
+        /* height: 16px; */
+        width: 150px;
+        font-size: 11px;
+    }
+    .skill-container h1{
+        font-size: 35px;
+    }
+    .skill{
+        width: 49px;
+        height: 49px;
+        margin: 22px;
+    }
+    .skill h4{
+        font-size: 10px;
+    }
+    .skill img{
+        width: 100%;
+        height: 100%;
+    }
+    .skill img:hover{
+        padding: 10px 10px;
+    }
+    .contenedor-principal-proyectos{
+        padding-top: 0px ;
+    }
+    .proyectos-container{
+        padding-top: 20px;
+    }
+    .titulo-proyecto{
+        font-size: 60px;
+    }
+    
+    /*  */
+    .container{
+        height: 100px;
+        width: 200px;
+    }
+    .portfolio__description--title {
+        font-size: 10px;
+    }
+    .portfolio__description--text {
+        margin: 5px 0;
+        font-size: 9px;
+    }
+    .portfolio__description {
+        padding: 10px;
+    }
+    .buttons__container {
+        margin-top: 10px;
+    }
+    .button {
+        padding: 5px 10px;
+        /* height: 20px;
+        width: 30px; */
+        font-size: 8px;
+    }
+    /*  */
+    .formulario-contacto h1{
+        font-size: 30px;
+    }
+    .formulario-contacto p{
+        font-size: 13px;
+    }
+    .container-contacto h4{
+        font-size: 10px;
+    }
+    .container-contacto img{
+        width: 40px;
+    }
+    .footer {
+        background-color: rgba(245, 245, 245, 0.911);
+        padding: 10px;
+        font-size: 10px;
     }
 }
 
