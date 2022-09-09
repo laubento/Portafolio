@@ -758,6 +758,9 @@ nav{
     .lista-container{
         display: none;
     }
+    .contenedor-logo h1{
+        font-size: 8px;
+    }
     .lista-container-cel{
         display: block;
         margin-right: 20px;
@@ -831,5 +834,23 @@ nav{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+}
+@media (max-width: 400px) {
+    .about-container{
+        height: 100vh;
+    }
+    .amarillo{
+        width: 100%;
+        height: 100vh;
+    }
+    .amarillo h2{
+        font-size: 15px;
+    }
+    .amarillo p{
+        font-size: 10px;
+    }
+    .container-botonDescargarCv h3{
+        font-size: 15px;
     }
 }
