@@ -3,15 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 html{
     scroll-behavior: smooth;
 }
-
 div[id]{
     scroll-margin-top: 60px;
 }
-
 li, h2, h3, h1, p, h4, a{
     font-family: 'Kanit', sans-serif;
     text-decoration: none;
@@ -21,6 +18,9 @@ li, h2,h1,h3,h4,img{
 }
 h4{
     color: #fff;
+}
+#check{
+    display: none;
 }
 .hr-inicio {border: 0; 
     height: 12px; 
@@ -41,12 +41,9 @@ h4{
     width: 50%;
     font-size: 20px;
 }   
-
-
 .container-img-logo{
     margin-right: 40px;
 }
-
 .container-principal{
     background-image: url(./Imagenes/FondoPrincipal.png);
     background-repeat: no-repeat;
@@ -55,7 +52,6 @@ h4{
     background-attachment: fixed;
     position: relative;
 }
-
 nav{
     display: flex;
     align-items: center;
@@ -89,7 +85,6 @@ nav{
     background-color: #fff;
     border-radius: 20px;
 }
-
 .home-container{
     background-color: rgba(0, 0, 0, 0.61);
     height: 100vh;
@@ -112,7 +107,6 @@ nav{
     border-radius: 100%;
     margin-right: 40px;
 }
-
 .about-container{
     /* background-color: #fff; */
     height: 100vh;
@@ -176,7 +170,6 @@ nav{
     align-items: center;
     justify-content: center;
 }
-
 .botonCV a{
     text-decoration: none;
     color: black;
@@ -190,14 +183,12 @@ nav{
     transition-duration: 0.6s;
     color:white;
 }
-
 .curriculum-container{
     display: flex;
     justify-content: center;
     padding-top: 10px;
     margin-top: 20px;
 }
-
 .curriculum-img{
     height: 50%;
     width: 50%;
@@ -215,7 +206,6 @@ nav{
 .skill{
     transition:  0.4s;
 }
-
 .skill img{
 
     transition: all 0.4s;
@@ -240,14 +230,11 @@ nav{
     text-shadow: 10px 10px 2px rgba(255, 255, 0, 0.164);
     margin-bottom: 70px;
 }
-
-
 .proyectos-container{
     width:100%;
     height: 100vh;
     background: rgba(0, 0, 0, 0.61);
 }
-
 .contenedor-principal-proyectos{
     padding: 130px 0px 0px 0px;
     height: 100%;
@@ -257,7 +244,6 @@ nav{
     display: flex;
     justify-content: space-evenly;
 }
-
 .titulo-proyecto{
     display: flex;
     justify-content: center;
@@ -266,14 +252,12 @@ nav{
     color:yellow;
     margin: 20px;
 }
-
 /*  */
 .container{
     height: 200px;
     width: 400px;
     
 }
-
 .portfolio__item {
     background: white;
     position: relative;
@@ -282,7 +266,6 @@ nav{
     font-size: 14px;
     border-radius: 10px;
 }
-
 .portfolio__img {
     width: 100%;
     height: 100%;
@@ -291,8 +274,7 @@ nav{
     transition: all 1s;
     border-radius: 10px;
     border: 1px solid white;
-}
-  
+} 
 .portfolio__description {
     padding: 50px;
     position: absolute;
@@ -307,36 +289,30 @@ nav{
     display: flex;
     justify-content: center;
     flex-direction: column;
-}
-  
+} 
 .portfolio__item:hover .portfolio__description {
     visibility: visible;
     opacity: 1;
     transition: all 0.5s;
     border-radius: 10px;
     transform: translateY(-300px);
-}
-  
+} 
 .portfolio__item:hover .portfolio__img {
     transition: all 1s;
     border-radius: 10px;
     transform: scale(1.3);
-}
-  
+}  
 .portfolio__description--title {
     color: #fff;
-}
-  
+} 
 .portfolio__description--text {
     margin: 20px 0;
     color: #fff;
 }
-  
 .buttons__container {
     display: flex;
     border-radius: 10px;
 }
-  
 .button {
     background: #191919;
     color: #f5f5f5;
@@ -344,11 +320,9 @@ nav{
     display: inline-block;
     margin: auto;
 }
-
 .button:hover {
     color: rgb(255, 251, 11);
 }
-
 .button--cta {
 
     background: var(--blue);
@@ -360,11 +334,9 @@ nav{
     font: bold;
     border-radius: 5px;
 }
-
 .button--cta i {
     margin-right: 10px;
 }
-
 .button--cta:hover {
     background: var(--grey);
     color: white;
@@ -373,17 +345,13 @@ nav{
     color: white;
 }
 /*  */
-
-
 .hr-final{
     border: 0; height: 0; box-shadow: 0 1px 5px 1px rgb(255, 251, 11);
 }
-
 .formulario-contacto{
     width:100%;
     background: rgba(0, 0, 0, 0.61);
 }
-
 .formulario-contacto h1{
     display:flex;
     justify-content: center;
@@ -416,36 +384,34 @@ nav{
     padding: 10px;
     background-color: #ffffffda;
 }
-
 .container-contacto div:hover > h4{
     color: black;
 }
-
 /*  */
-
 .footer {
     background-color: rgba(245, 245, 245, 0.911);
     padding: 30px;
     text-align: center;
     font-size: 14px;
 }
-
 .footer a{
     color: black;
 }
-
-
 .footer a:hover {
     color: blue;
 }
-
 .lista-container-cel{
     display: none;
 }
-/*  */
-
-
-
+.menu-desplegable{
+    width: 100%;
+    height: 100vh;
+    background-color: aqua;
+    position: fixed;
+    /* background-size: cover; */
+    z-index:999;
+    display: flex;
+}
 /* Notas para media querry */
 /* Se tiene solo en cuenta con una pantalla de 100% ni mas ni menos */
 /* Pantalla por defecto 1920 x 1080 */
@@ -755,21 +721,36 @@ nav{
     }
 }
 @media (max-width: 576px){
-    .lista-container{
-        display: none;
-    }
-    .contenedor-logo h1{
-        font-size: 8px;
-    }
     .lista-container-cel{
         display: block;
         margin-right: 20px;
     }
-    .container-principal::before{
-        content: "";
-        background: #ff0000;
-        width: 100vh;
+    .lista-container{
+        position: fixed;
+        width: 100%;
         height: 100vh;
+        background-color: rgba(0, 0, 0, 0.61);
+        top: 60px;
+        left: 100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    .lista-container li{
+        display: block;
+        margin: 30px 0px;
+        line-height: 20px;
+    }
+    .lista-container li a{
+        font-size: 24px;
+    }
+    #check:checked  ~ .lista-container{
+        left: 0;
+    }
+    
+
+
+    .contenedor-logo h1{
+        font-size: 8px;
     }
     .home-container{
         display: flex;
@@ -809,9 +790,6 @@ nav{
         height: 25px;
         width: 180px;
     }
-    .unity{
-        display: none;
-    }
     .proyectos-container{
         padding: 0px;
     }
@@ -835,6 +813,7 @@ nav{
         justify-content: center;
         align-items: center;
     }
+
 }
 @media (max-width: 400px) {
     .about-container{
@@ -852,5 +831,13 @@ nav{
     }
     .container-botonDescargarCv h3{
         font-size: 15px;
+    }
+}
+@media (max-height: 750px){
+    .about-container{
+        height: 100vh;
+    }
+    .amarillo{
+        height: 100vh;
     }
 }
